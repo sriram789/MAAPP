@@ -1,7 +1,7 @@
 import { newMessageFromChannelEventHandler } from './channel/index.js';
 import { newMessageFromUserEventHandler } from './user/index.js';
 
-export const newMessageEventHandler = async (event) => {
+export const newMessageEventHandler = async (client, event) => {
     const {
         message: {
             peerId: {
@@ -11,8 +11,8 @@ export const newMessageEventHandler = async (event) => {
         message
     } = event;
     switch(className) {
-        case 'PeerChannel': newMessageFromChannelEventHandler(message); break;
-        case 'PeerUser': newMessageFromUserEventHandler(message); break;
-        default: newMessageFromChannelEventHandler(message); break;
+        case 'PeerChannel': newMessageFromChannelEventHandler(client, message); break;
+        case 'PeerUser': newMessageFromUserEventHandler(client, message); break;
+        default: newMessageFromChannelEventHandler(client, message); break;
     }
 }

@@ -5,5 +5,5 @@ import { newMessageEventHandler } from './eventHandlers/newMessage.js';
 export const App = async () => {
     const client = await getClient();
 
-    client.addEventHandler(newMessageEventHandler, new NewMessage());
+    client.addEventHandler((event) => newMessageEventHandler(client, event), new NewMessage());
 };

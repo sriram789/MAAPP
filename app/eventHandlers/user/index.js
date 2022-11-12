@@ -1,4 +1,4 @@
-export const newMessageFromUserEventHandler = async (message) => {
+export const newMessageFromUserEventHandler = async (client, message) => {
     const {
         peerId: {
             channelId: userId
