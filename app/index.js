@@ -1,7 +1,9 @@
 import { getClient } from './session/index.js';
+import { NewMessage } from 'telegram/events/index.js'; 
+import { newMessageEventHandler } from './eventHandlers/newMessage.js';
 
 export const App = async () => {
     const client = await getClient();
 
-    await client.sendMessage('me', { message: 'Hello world!' });
+    client.addEventHandler(newMessageEventHandler, new NewMessage());
 };
