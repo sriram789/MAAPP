@@ -1,0 +1,26 @@
+{
+  "name": "maapp",
+  "version": "1.0.0",
+  "description": "Message Automator Telegram APP",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sriram789/MAAPP.git"
+  },
+  "author": "Sriram Nithyanandam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sriram789/MAAPP/issues"
+  },
+  "homepage": "https://github.com/sriram789/MAAPP#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "input": "^1.0.1",
+    "telegram": "^2.13.6"
+  }
+}
