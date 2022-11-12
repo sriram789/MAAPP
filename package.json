@@ -21,6 +21,7 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "input": "^1.0.1",
+    "puppeteer": "^19.2.2",
     "telegram": "^2.13.6"
   }
 }
