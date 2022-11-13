@@ -1,5 +1,5 @@
 const URL_REGEX = /(https?:\/\/[^ ]*)/;
 
 export const fetchUrlFromString = (data) => {
-    return input.match(urlRegex)[0];
+    return data.match(URL_REGEX)[0];
 }
