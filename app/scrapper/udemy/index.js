@@ -27,6 +27,3 @@ export const purchaseCourse = (client, url) => {
         async (page) => await initiatePurchase(client, page, url)
     );
 }
-
-const URL = 'https://www.udemy.com/course/learn-sqlmysql-database-basics-for-free/';
-purchaseCourse(null, URL);

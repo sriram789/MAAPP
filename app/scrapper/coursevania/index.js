@@ -7,7 +7,7 @@ const getUdemyUrl = async (client, page) => {
         const PATH_SELECTOR = '.stm_lms_udemy__affiliate_btn a';
         return document.querySelectorAll(PATH_SELECTOR)[0].href;
     });
-    purchaseCourse(client, udemyCourseLink);
+    // purchaseCourse(client, udemyCourseLink);
     sendSelfMessage(client, udemyCourseLink);
 }
 
